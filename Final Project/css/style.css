@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    background-color: #D1BCE3;
+}
+
+
+#container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 0.2fr 0.3fr 1fr;
+   grid-template-areas:
+      "header header header link link"
+      "nav nav nav nav nav"
+      "first first second third fourth";
+   min-height: 100vh;
+   background-image: url("backgroundopacity.png");
+   background-repeat: no-repeat;
+}
+
+.viewer {
+
+}
+
+.intro {
+    background-image: url("white75percent.png");
+    background-size: cover;
+    background-repeat: repeat;
+
+    text-align: left;
+    margin-bottom: 20px;
+    margin-right: none;
+    padding: 10px;
+    height: 50px;
+}
+
+.links {
+  background-image: url("white75percent.png");
+  background-size: cover;
+  background-repeat: repeat;
+  margin-bottom: 20px;
+  margin-left: none;
+  padding: 10px;
+  text-align: right;
+  height: 50px;
+}
+
+.nav {
+  background-image: url("white75percent.png");
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Fredoka One', cursive;
+  color: #432556;
+  padding: 0px;
+  margin: 0px;
+  text-indent: 10px;
+}
+
+h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  margin: 10px;
+  color: #432556;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  color: black
+  padding: 0px;
+  margin: 0px;
+}
+
+
+h4 {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  padding: 5px;
+  margin: 0px;
+}
+
+p {
+  text-indent: 5px;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-indent: 5px;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  text-indent: 5px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.button {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  background-color: #63458A;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.button:hover {
+  box-shadow: 3px 3px 3px #D1BCE3;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.shown {
+  opacity: 1;
+  background-image: url("white75percent.png");
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 10px;
+  margin: 20px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.icon {
+  color: #432556;
+  padding: 5px;
+}
+
+.icon:hover{
+  text-shadow: 3px 3px 3px #D1BCE3;
+}
+
+.character {
+  top: 0;
+  left: 75;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 100px;
+}
+
+.animate {
+  animation: jump 750ms;
+}
+
+@keyframes jump {
+  0%{top: 100px;}
+  30%{top: 75px;}
+  70%{top: 75px;}
+  100%{top: 100px;}
+}
